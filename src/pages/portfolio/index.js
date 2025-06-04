@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { dataportfolio, meta } from "../../content_option";
+import { deeplearning,machinelearning,WebDev,ai,cv, meta } from "../../content_option";
 
 export const Portfolio = () => {
   return (
@@ -19,14 +19,85 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
+        
+        <div class="header">Curriculam Vieta</div>
         <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
+          {cv.map((data, i) => {
             return (
               <div key={i} className="po_item">
                 <img src={data.img} alt="" />
                 <div className="content">
+                  <h2>{data.header}</h2>
                   <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
+                  <a href={data.link}>View & Download</a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div class="header">Artificial Intelligence</div>
+        <div className="mb-5 po_items_ho">
+          {ai.map((data, i) => {
+            return (
+              <div key={i} className="po_item">
+                <img src={data.img} alt="" />
+                <div className="content">
+                  <h2>{data.header}</h2>
+                  <p>{data.description}</p>
+                  <a href={data.link}>GitHub Source</a>
+                  {data.web && <a href={data.web}>Visit Web Page</a>}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div class="header">Deep Learning</div>
+        <div className="mb-5 po_items_ho">
+          {deeplearning.map((data, i) => {
+            return (
+              <div key={i} className="po_item">
+                <img src={data.img} alt="" />
+                <div className="content">
+                  <h2>{data.header}</h2>
+                  <p>{data.description}</p>
+                  <a href={data.link}>GitHub Source</a>
+                  {data.web && <a href={data.web}>Visit Web Page</a>}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div class="header">Machine Learning</div>
+        <div className="mb-5 po_items_ho">
+          {machinelearning.map((data, i) => {
+            return (
+              <div key={i} className="po_item">
+                <img src={data.img} alt="" />
+                <div className="content">
+                  <h2>{data.header}</h2>
+                  <p>{data.description}</p>
+                  <a href={data.link}>GitHub Source</a>
+                  {data.web && <a href={data.web}>Visit Web Page</a>}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div class="header">Web Development</div>
+        <div className="mb-5 po_items_ho">
+          {WebDev.map((data, i) => {
+            return (
+              <div key={i} className="po_item">
+                <img src={data.img} alt="" />
+                <div className="content">
+                  <h2>{data.header}</h2>
+                  <p>{data.description}</p>
+                  <a href={data.link}>GitHub Source</a>
+                  {data.web && <a href={data.web}>Visit Web Page</a>}
                 </div>
               </div>
             );

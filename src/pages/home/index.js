@@ -30,6 +30,7 @@ export const Home = () => {
                         introdata.animated.first,
                         introdata.animated.second,
                         introdata.animated.third,
+                        introdata.animated.forth,
                       ],
                       autoStart: true,
                       loop: true,
@@ -50,6 +51,14 @@ export const Home = () => {
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
                       Contact Me
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </Link>
+                  <Link to="/about" className="text_2">
+                    <div id="button_p" className="ac_btn btn">
+                      About Me
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
