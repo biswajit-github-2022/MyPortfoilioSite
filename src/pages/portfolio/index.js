@@ -3,7 +3,6 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { deeplearning,machinelearning,WebDev,ai,cv, meta } from "../../content_option";
-import cvImg from "../../../src/assets/website_images/cv.jpg"
 
 export const Portfolio = () => {
   return (
@@ -26,7 +25,7 @@ export const Portfolio = () => {
           {cv.map((data, i) => {
             return (
               <div key={i} className="po_item">
-                <img src={cvImg} alt="" />
+                <img src={data.img} alt="" />
                 <div className="content">
                   <h2>{data.header}</h2>
                   <p>{data.description}</p>
