@@ -25,7 +25,7 @@ export const Portfolio = () => {
           {cv.map((data, i) => {
             return (
               <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+                <img src="https://ik.imagekit.io/xver0ugpc/website_images/cv.jpg?updatedAt=1749075910861" alt="" />
                 <div className="content">
                   <h2>{data.header}</h2>
                   <p>{data.description}</p>
