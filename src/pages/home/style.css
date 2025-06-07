@@ -69,6 +69,14 @@ section {
     }
 }
 
+@media (max-width:515px) {
+    .intro_btn-action {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
 .intro_sec .intro .feature .wrap-icon {
     background: 0 0!important;
     width: auto;
