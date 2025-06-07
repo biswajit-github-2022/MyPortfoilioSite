@@ -291,7 +291,7 @@ const WebDev= [
 const ai= [
     {
         img: "https://ik.imagekit.io/xver0ugpc/website_images/AI.png?updatedAt=1749075910430",
-        header: "Bi-Pedal Walker",
+        header: "Bi-Pedal Walk",
         description: "Implementing DDPG algorithm using pytorch to make a bipedal walker in the gym environment.",
         link: "https://github.com/biswajit-github-2022/bipedal-walker-with-ddpg",
         web: ""
