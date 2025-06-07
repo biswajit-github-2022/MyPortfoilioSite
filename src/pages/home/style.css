@@ -73,7 +73,10 @@ section {
     .intro_btn-action {
         display: flex;
         flex-direction: column;
-        
+        margin-bottom: 7px;
+    }
+    .button_p ,.button_h{
+        width: 150px;
     }
 }
 
