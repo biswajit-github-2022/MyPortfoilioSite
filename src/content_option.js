@@ -97,7 +97,7 @@ const deeplearning= [
     {
         img: "https://ik.imagekit.io/xver0ugpc/website_images/DL.png?updatedAt=1749075910228",
         header: "Text to SQL (Finetuning)",
-        description: "Doing fine-tuning of the T5-small model from Hugging Face for text-to-text tasks, integration with MySQL, and schema generation, with a Streamlit app.",
+        description: "Doing fine-tuning of the T5-small model from Hugging Face for text-to-text tasks, integration with MySQL with a Streamlit app.",
         link: "https://github.com/biswajit-github-2022/text-to-sql-finetuning",
         web: ""
     },
