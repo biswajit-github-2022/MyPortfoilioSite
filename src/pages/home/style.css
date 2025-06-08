@@ -74,7 +74,7 @@ section {
         display: flex;
         flex-direction: column;
     }
-    .button_p ,.button_h{
+    #button_p ,#button_h{
         width: 150px;
         margin-bottom: 7px;
     }
